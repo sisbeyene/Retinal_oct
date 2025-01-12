@@ -1,0 +1,30 @@
+{
+    "experiment_group": "Experiments",
+    "experiments": [
+        {
+            "dataset": "RetinaDatasetWrapper", 
+            "model": "RetinaModel", 
+            "network": "resnetconv", 
+            "train_args": {
+                "batch_size": 32, 
+                "epochs": 10,
+                "lr": 1e-3,
+                "loss": "crossentropy", 
+                "optimizer": "adam"
+            }
+        },
+        {
+            "dataset": "RetinaDatasetWrapper", 
+            "model": "RetinaModel", 
+            "network": "resnetconvfinetune", 
+            "train_args": {
+                "batch_size": 32, 
+                "epochs": 10, 
+                "lr": 1e-4,
+                "loss": "crossentropy", 
+                "optimizer": "adam"
+            }
+        }
+    ]
+
+}
