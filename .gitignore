@@ -1,0 +1,20 @@
+# Data
+data
+archive.zip
+
+# Python
+__pycache__
+.ipynb_checkpoints
+
+# W&B
+wandb-debug.log
+wandb/*
+!wandb/settings
+
+#MISC
+.*DS_Store
+logs
+tmp
+notebooks/sub_sampled
+notebooks/uncertain
+notebooks/embeddings
